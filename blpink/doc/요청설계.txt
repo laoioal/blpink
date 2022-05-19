@@ -1,0 +1,81 @@
+# Whistle Project 요청 설계
+
+--------------------------------------------------------------
+# 메인페이지 보기 요청 
+요청내용	: 	/blpink/main.black
+파라미터	:	무
+컨트롤러	: 	com.githrd.blpink.controller.MainForm
+뷰			:	/WEB-INF/views/main.jsp
+--------------------------------------------------------------
+
+
+# 회원관련 요청
+--------------------------------------------------------------
+# 로그인 폼보기 요청 
+요청내용	: /blpink/loginForm.black
+파라미터	: X
+컨트롤러	: com.githrd.blpink.controller.LoginForm
+뷰			: /WEB-INF/views/member/login.jsp
+--------------------------------------------------------------
+# 로그인 처리 요청 
+요청내용	: /blpink/loginProc.black
+파라미터	: id, pw
+컨트롤러	: com.githrd.blpink.controller.LoginProc
+뷰			:
+				성공 ] /blpink/main.black
+				실패 ] /blpink/loginForm.black
+--------------------------------------------------------------
+# 로그아웃 처리 요청 
+요청내용	: /blpink/logoutProc.black
+파라미터	: x
+컨트롤러	: com.githrd.blpink.controller.LogoutProc
+뷰			:
+				성공 ] /blpink/main.black
+--------------------------------------------------------------
+# 회원가입 폼보기 요청 
+요청내용	: /blpink/JoinForm.black
+파라미터	: x
+컨트롤러	: com.githrd.blpink.controller.JoinForm
+뷰			: /WEB-INF/views/member/join.jsp
+--------------------------------------------------------------
+# 아이디체크 처리 요청 
+요청내용	: /blpink/idck.black
+파라미터	: id
+컨트롤러	: com.githrd.blpink.controller.IdCheck
+--------------------------------------------------------------
+# 회원가입 처리 요청 
+요청내용	: /blpink/join.black
+파라미터	: name, id, pw, mail, tel, gen, avt
+컨트롤러	: com.githrd.blpink.controller.Join
+뷰			: 
+				성공 ] /blpink/main.black
+				실패 ] /blpink/JoinForm.black
+--------------------------------------------------------------
+# 내정보 폼보기 요청 
+요청내용	: /blpink/myInfo.black
+파라미터	: x
+컨트롤러	: com.githrd.blpink.controller.MyInfo
+뷰			: /WEB-INF/views/member/memberInfo.jsp
+--------------------------------------------------------------
+# 회원목록 폼보기 요청 
+요청내용	:
+파라미터	:
+컨트롤러	:
+뷰			:
+--------------------------------------------------------------
+# 회원정보 폼보기 요청 
+요청내용	:
+파라미터	:
+컨트롤러	:
+뷰			:
+--------------------------------------------------------------
+# 회원탈퇴 처리요청 
+요청내용	:
+파라미터	:
+컨트롤러	:
+뷰			:
+--------------------------------------------------------------
+# 내정보 수정 폼보기 요청 
+
+--------------------------------------------------------------
+# 회원탈퇴 처리요청 
